@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 10px;
+        }
+        header {
+            height: 25vh;
+            background: linear-gradient(90deg, aqua 0%, coral 50%, purple 100%);
+            box-sizing: border-box;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        img {
+            width: 80px;
+            border: white solid 3px;
+            box-shadow: 8px 0 10px 0 aqua;
+            border-radius: 50%;
+            transition: 1s;
+        }
+        img:hover {
+            margin-left: -25%;
+            box-shadow: 0 0 10px 5px white;
+        }
+        button {
+            padding: 9px;
+            border: none;
+            border-radius: 20px;
+            margin: 0 5px 0 0;
+            
+            font-size: .7em;
+            color: rgb(110, 110, 110);
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(158, 158, 158);
+            color: black;
+        }
+        .hire:hover {
+            background-color: green;
+            color: white;
+            
+        }
+        @media (min-width:576px) {
+            header {
+                transform: scale(1.5);
+                padding-top: 3vh;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="foto">
+            <img src="./assets/foto.jpg" alt="foto" title="Muhammad Dandri Handian">
+        </div>
+        <div class="teks">
+            <h3>Muhammad Dandri Handian</h3>
+            <p>Web Developer</p>
+            <button>Download CV</button>
+            <button class="hire">Hire Me</button>
+        </div>
+    </header>
+    
+</body>
+</html>
